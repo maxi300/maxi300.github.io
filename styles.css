@@ -1,0 +1,72 @@
+
+
+/* Estilos para las cajas */
+
+
+
+
+
+
+ h2, h3 {
+    background-color: green;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+p{ 
+    border: 2px solid black;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+}
+
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+}
+
+
+
+#miDiv {
+    font-size: 15px;
+   
+ } /* Tamaño inicial del texto */
+
+
+ #noveno {
+    font-size: 24px; /* Tamaño inicial del texto */
+    color: blue; }
+
+
+
+
+
+    #elementoEnfocar {
+        width: 100px;
+        height: 100px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 20px;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+      }
+      
+      #elementoEnfocado {
+        color: blue; /* Cambiar color */
+        font-size: 20px; /* Cambiar tamaño de fuente */
+        font-family: Arial, sans-serif; /* Cambiar fuente */
+        background-color: #e0e0e0; /* Cambiar fondo */
+      }
