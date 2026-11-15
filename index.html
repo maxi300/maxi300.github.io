@@ -17,7 +17,7 @@
     <!-- Main Container Card -->
     <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
 
-        <!-- Sidebar Profile (Left Column - 4 cols) -->
+        <!-- Sidebar Profile (Left Column - 4 cols, sticky ONLY on lg screens) -->
         <aside class="lg:col-span-4 bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 md:p-8 flex flex-col items-center text-center lg:sticky lg:top-8 shadow-2xl shadow-black/50">
             <!-- Avatar -->
             <div class="w-28 h-28 md:w-32 md:h-32 rounded-2xl bg-gradient-to-tr from-violet-600 to-indigo-500 p-1 mb-5 shadow-lg shadow-indigo-500/20">
@@ -91,7 +91,7 @@
                         <p class="text-xs md:text-sm text-zinc-400">Desarrollo de software, auditoría e infraestructura.</p>
                     </div>
                 </div>
-                <!-- Navigation Tabs (Clean grid on mobile to prevent squishing) -->
+                <!-- Navigation Tabs (Clean 3-column grid on mobile) -->
                 <nav class="grid grid-cols-3 gap-1.5 bg-zinc-900/80 p-1.5 rounded-xl border border-zinc-800 text-xs font-medium text-center">
                     <a href="#proyectos" class="py-2 px-1 rounded-lg bg-indigo-600 text-white shadow-md truncate">Software</a>
                     <a href="#institucional" class="py-2 px-1 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition truncate">Auditoría</a>
@@ -105,7 +105,7 @@
                     <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Perfil de Ingeniería
                 </h3>
                 <p class="text-zinc-300 leading-relaxed text-sm md:text-base">
-                    Estudiante de 5.º año de Ingeniería en Sistemas y Redes Informáticas. Combino el desarrollo Full-Stack avanzado, pasarelas de pago y arquitectura cloud en Kubernetes con experiencia práctica en auditoría de TI bajo marcos internacionales (COBIT), desarrollo educativo interactivo (Realidad Aumentada) y soporte técnico especializado en hardware y dispositivos.
+                    Estudiante de 5.º año de Ingeniería en Sistemas y Redes Informáticas. Combino el desarrollo Full-Stack avanzado, pasarelas de pago y arquitectura cloud en Kubernetes con experiencia práctica en auditoría de TI bajo marcos internacionales (COBIT), desarrollo educativo interactivo (Realidad Aumentada) y soporte técnico de infraestructura, seguridad electrónica y dispositivos.
                 </p>
             </section>
 
@@ -278,14 +278,14 @@
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Sector Público / MINED</span>
                             <i class="fa-solid fa-cube text-indigo-400 text-lg shrink-0"></i>
                         </div>
-                        <h4 class="text-base font-bold text-white">Plataforma Educativa con Realidad Aumentada (AR)</h4>
+                        <h4 class="text-base font-bold text-white">Reingeniería y Nueva Arquitectura de Plataforma Educativa</h4>
                         <p class="text-xs text-zinc-400 leading-relaxed">
-                            Desarrollo de experiencias educativas interactivas optimizadas para equipos móviles y portátiles. Escaneo mediante códigos QR / marcadores para visualización y manipulación de modelos 3D didácticos.
+                            Diseño y desarrollo desde cero de una nueva arquitectura web educativa con interfaz moderna (UI/UX) optimizada para celulares y laptops. Integra módulos de Realidad Aumentada (AR) y lectura de códigos QR para interactuar con modelos 3D didácticos.
                         </p>
                         <div class="flex flex-wrap gap-1.5 pt-2">
-                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Unity 3D</span>
-                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Blender</span>
-                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">AR Foundation</span>
+                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Nueva Arquitectura</span>
+                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">UI/UX & Responsive</span>
+                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Unity 3D / AR / QR</span>
                         </div>
                     </div>
 
@@ -308,24 +308,24 @@
                 </div>
             </section>
 
-            <!-- Support, Hardware & Infrastructure Section (Realistic & Balanced) -->
+            <!-- Support, Hardware & Infrastructure Section -->
             <section id="soporte" class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 md:p-8 shadow-xl space-y-6 scroll-mt-6">
                 <h3 class="text-base md:text-lg font-bold text-white flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Soporte Técnico, Laptops & Dispositivos
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Soporte Técnico, Redes & Seguridad
                 </h3>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl">
                         <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Mantenimiento de Laptops & PCs</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Mantenimiento preventivo, limpieza interna de componentes, reinstalación de sistemas operativos y corrección de errores críticos de sistema (pantallas azules / BSOD).</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Mantenimiento preventivo, limpieza interna, cambio de pasta térmica, reinstalación de sistemas operativos, optimización y solución de fallos críticos (pantallas azules / BSOD).</p>
                     </div>
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl">
-                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Redes, Impresoras & Comercios</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Soporte preventivo y correctivo en infraestructura tecnológica e impresoras para negocios locales, configuración de redes y cableado estructurado.</p>
+                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Redes, Cámaras de Seguridad & Comercios</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Instalación y configuración de cámaras de vigilancia (CCTV/IP), soporte técnico a impresoras, configuración de redes Wi-Fi, enrutamiento y cableado estructurado para negocios y hogares.</p>
                     </div>
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl sm:col-span-2">
-                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Reparación de Dispositivos Móviles</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Sustitución de módulos de pantalla completos, cambio de baterías y puertos de carga, y reensamblaje de equipos a nuevos chasis con herramientas de precisión.</p>
+                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Mantenimiento y Reparación de Dispositivos Móviles</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Diagnóstico de fallas físicas, reemplazo de módulos de pantalla completos, cambio de baterías y puertos de carga, además de reensamblaje integral de componentes en nuevos chasis.</p>
                     </div>
                 </div>
             </section>
