@@ -12,13 +12,13 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-[#09090b] text-zinc-100 min-h-screen flex items-start justify-center p-4 md:p-8">
+<body class="bg-[#09090b] text-zinc-100 min-h-screen flex items-start justify-center p-3 sm:p-4 md:p-8">
 
     <!-- Main Container Card -->
     <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
 
-        <!-- Sidebar Profile (Left Column - 4 cols, sticky ONLY on lg screens) -->
-        <aside class="lg:col-span-4 bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 md:p-8 flex flex-col items-center text-center lg:sticky lg:top-8 shadow-2xl shadow-black/50">
+        <!-- Sidebar Profile (Left Column - 4 cols) -->
+        <aside class="lg:col-span-4 bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 md:p-8 flex flex-col items-center text-center lg:sticky lg:top-8 shadow-2xl shadow-black/50">
             <!-- Avatar -->
             <div class="w-28 h-28 md:w-32 md:h-32 rounded-2xl bg-gradient-to-tr from-violet-600 to-indigo-500 p-1 mb-5 shadow-lg shadow-indigo-500/20">
                 <div class="w-full h-full bg-[#18181b] rounded-[14px] flex items-center justify-center text-3xl font-bold text-indigo-400">
@@ -84,15 +84,18 @@
         <main class="lg:col-span-8 space-y-6 md:space-y-8">
             
             <!-- Navbar Header -->
-            <header class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-xl">
-                <div>
-                    <h2 class="text-lg md:text-xl font-bold text-white">Portafolio Profesional</h2>
-                    <p class="text-xs md:text-sm text-zinc-400">Desarrollo de software, auditoría de sistemas e infraestructura.</p>
+            <header class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 md:p-6 flex flex-col gap-4 shadow-xl">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                    <div>
+                        <h2 class="text-lg md:text-xl font-bold text-white">Portafolio Profesional</h2>
+                        <p class="text-xs md:text-sm text-zinc-400">Desarrollo de software, auditoría e infraestructura.</p>
+                    </div>
                 </div>
-                <nav class="flex flex-wrap items-center gap-1.5 bg-zinc-900/80 p-1.5 rounded-xl border border-zinc-800 text-xs md:text-sm font-medium w-full sm:w-auto justify-center">
-                    <a href="#proyectos" class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white shadow-md">Software & Cloud</a>
-                    <a href="#institucional" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition">Auditoría</a>
-                    <a href="#soporte" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition">Soporte TI</a>
+                <!-- Navigation Tabs (Clean grid on mobile to prevent squishing) -->
+                <nav class="grid grid-cols-3 gap-1.5 bg-zinc-900/80 p-1.5 rounded-xl border border-zinc-800 text-xs font-medium text-center">
+                    <a href="#proyectos" class="py-2 px-1 rounded-lg bg-indigo-600 text-white shadow-md truncate">Software</a>
+                    <a href="#institucional" class="py-2 px-1 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition truncate">Auditoría</a>
+                    <a href="#soporte" class="py-2 px-1 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition truncate">Soporte TI</a>
                 </nav>
             </header>
 
@@ -102,7 +105,7 @@
                     <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Perfil de Ingeniería
                 </h3>
                 <p class="text-zinc-300 leading-relaxed text-sm md:text-base">
-                    Estudiante de 5.º año de Ingeniería en Sistemas y Redes Informáticas. Combino el desarrollo Full-Stack avanzado, pasarelas de pago y arquitectura cloud en Kubernetes con experiencia práctica en auditoría de TI bajo marcos internacionales (COBIT), desarrollo educativo interactivo (Realidad Aumentada) y soporte técnico especializado de hardware e infraestructura de campo.
+                    Estudiante de 5.º año de Ingeniería en Sistemas y Redes Informáticas. Combino el desarrollo Full-Stack avanzado, pasarelas de pago y arquitectura cloud en Kubernetes con experiencia práctica en auditoría de TI bajo marcos internacionales (COBIT), desarrollo educativo interactivo (Realidad Aumentada) y soporte técnico especializado en hardware y dispositivos.
                 </p>
             </section>
 
@@ -112,13 +115,13 @@
                     <h3 class="text-base md:text-lg font-bold text-white flex items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Proyectos & Repositorios Oficiales
                     </h3>
-                    <span class="text-xs text-zinc-500">6 Repositorios Clave</span>
+                    <span class="text-xs text-zinc-500">6 Repositorios</span>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     
                     <!-- 1. POS & Facturación DTE -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
                         <div>
                             <div class="flex justify-between items-start gap-2 mb-3">
                                 <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">En Producción</span>
@@ -142,7 +145,7 @@
                     </div>
 
                     <!-- 2. MorazánGo -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
                         <div>
                             <div class="flex justify-between items-start gap-2 mb-3">
                                 <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20">MVP Móvil</span>
@@ -166,7 +169,7 @@
                     </div>
 
                     <!-- 3. Mandadito -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
                         <div>
                             <div class="flex justify-between items-start gap-2 mb-3">
                                 <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">Delivery Local</span>
@@ -189,7 +192,7 @@
                     </div>
 
                     <!-- 4. NubePaaS -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
                         <div>
                             <div class="flex justify-between items-start gap-2 mb-3">
                                 <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">Cloud & DevOps</span>
@@ -213,7 +216,7 @@
                     </div>
 
                     <!-- 5. Clinical Lab System -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
                         <div>
                             <div class="flex justify-between items-start gap-2 mb-3">
                                 <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Salud & Roles</span>
@@ -237,7 +240,7 @@
                     </div>
 
                     <!-- 6. E-commerce Completa -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 flex flex-col justify-between hover:border-zinc-700 transition shadow-lg group">
                         <div>
                             <div class="flex justify-between items-start gap-2 mb-3">
                                 <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-pink-500/10 text-pink-400 border border-pink-500/20">E-Commerce</span>
@@ -270,14 +273,14 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Project MINED / AR -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 shadow-lg space-y-3">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 shadow-lg space-y-3">
                         <div class="flex justify-between items-start gap-2">
-                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Proyecto Confidencial / Sector Público</span>
+                            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Sector Público / MINED</span>
                             <i class="fa-solid fa-cube text-indigo-400 text-lg shrink-0"></i>
                         </div>
-                        <h4 class="text-base font-bold text-white">Plataforma Educativa con Realidad Aumentada (MINED)</h4>
+                        <h4 class="text-base font-bold text-white">Plataforma Educativa con Realidad Aumentada (AR)</h4>
                         <p class="text-xs text-zinc-400 leading-relaxed">
-                            Desarrollo de software interactivo para estudiantes de 2.º grado a bachillerato. Escaneo de libros mediante códigos QR / marcadores de imagen para la proyección y manipulación de modelos 3D educativos en dispositivos móviles.
+                            Desarrollo de experiencias educativas interactivas optimizadas para equipos móviles y portátiles. Escaneo mediante códigos QR / marcadores para visualización y manipulación de modelos 3D didácticos.
                         </p>
                         <div class="flex flex-wrap gap-1.5 pt-2">
                             <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Unity 3D</span>
@@ -287,7 +290,7 @@
                     </div>
 
                     <!-- IT Auditing Agroferretería -->
-                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 shadow-lg space-y-3">
+                    <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 shadow-lg space-y-3">
                         <div class="flex justify-between items-start gap-2">
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Auditoría & Gobierno TI</span>
                             <i class="fa-solid fa-shield-halved text-indigo-400 text-lg shrink-0"></i>
@@ -299,30 +302,30 @@
                         <div class="flex flex-wrap gap-1.5 pt-2">
                             <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">COBIT 2019</span>
                             <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Matriz RACI</span>
-                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Análisis de Riesgo (PMI)</span>
+                            <span class="text-[10px] bg-zinc-900 border border-zinc-800 px-2 py-0.5 rounded text-zinc-300">Análisis de Riesgo</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Support, Hardware & Infrastructure Section -->
-            <section id="soporte" class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-xl space-y-6 scroll-mt-6">
+            <!-- Support, Hardware & Infrastructure Section (Realistic & Balanced) -->
+            <section id="soporte" class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 sm:p-6 md:p-8 shadow-xl space-y-6 scroll-mt-6">
                 <h3 class="text-base md:text-lg font-bold text-white flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Infraestructura, Soporte de Campo & Electrónica
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Soporte Técnico, Laptops & Dispositivos
                 </h3>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl">
-                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Soporte y Sistemas Operativos</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Diagnóstico avanzado y resolución de fallas críticas en estaciones de trabajo, corrección de errores de sistema (BSOD / Pantallas azules) y recuperación de datos.</p>
+                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Mantenimiento de Laptops & PCs</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Mantenimiento preventivo, limpieza interna de componentes, reinstalación de sistemas operativos y corrección de errores críticos de sistema (pantallas azules / BSOD).</p>
                     </div>
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl">
-                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Mantenimiento de Redes, Impresoras & Comercios</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Soporte preventivo y correctivo en infraestructura tecnológica e impresoras para tiendas y ferreterías, gestión de redes locales, segmentación Wi-Fi y cableado estructurado.</p>
+                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Redes, Impresoras & Comercios</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Soporte preventivo y correctivo en infraestructura tecnológica e impresoras para negocios locales, configuración de redes y cableado estructurado.</p>
                     </div>
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl sm:col-span-2">
-                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Electrónica Aplicada & Dispositivos Móviles</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Desensamblaje especializado de hardware móvil, sustitución de módulos de pantalla completos y reparación de circuitos de carga mediante soldadura de precisión y reflow en banco de trabajo.</p>
+                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Reparación de Dispositivos Móviles</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Sustitución de módulos de pantalla completos, cambio de baterías y puertos de carga, y reensamblaje de equipos a nuevos chasis con herramientas de precisión.</p>
                     </div>
                 </div>
             </section>
