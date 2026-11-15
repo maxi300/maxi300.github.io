@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maguiber — Full-Stack, Cloud & IT Auditor</title>
+    <title>Maguiber Stifen Ramos Flores — Full-Stack, Cloud & IT Auditor</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,29 +12,29 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-[#09090b] text-zinc-100 min-h-screen flex items-center justify-center p-4 md:p-8">
+<body class="bg-[#09090b] text-zinc-100 min-h-screen flex items-start justify-center p-4 md:p-8">
 
     <!-- Main Container Card -->
-    <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
 
-        <!-- Sidebar Profile (Left Column - 4 cols) -->
-        <aside class="lg:col-span-4 bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 md:p-8 flex flex-col items-center text-center sticky top-8 shadow-2xl shadow-black/50">
+        <!-- Sidebar Profile (Left Column - 4 cols, sticky ONLY on lg screens) -->
+        <aside class="lg:col-span-4 bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 md:p-8 flex flex-col items-center text-center lg:sticky lg:top-8 shadow-2xl shadow-black/50">
             <!-- Avatar -->
-            <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-violet-600 to-indigo-500 p-1 mb-6 shadow-lg shadow-indigo-500/20">
+            <div class="w-28 h-28 md:w-32 md:h-32 rounded-2xl bg-gradient-to-tr from-violet-600 to-indigo-500 p-1 mb-5 shadow-lg shadow-indigo-500/20">
                 <div class="w-full h-full bg-[#18181b] rounded-[14px] flex items-center justify-center text-3xl font-bold text-indigo-400">
-                    MA
+                    MR
                 </div>
             </div>
 
-            <h1 class="text-2xl font-bold tracking-tight text-white mb-1">Maguiber Stifen Ramos Flores</h1>
-            <p class="text-sm font-medium text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full mb-6 border border-indigo-500/20">
+            <h1 class="text-xl md:text-2xl font-bold tracking-tight text-white mb-1.5">Maguiber Stifen Ramos Flores</h1>
+            <p class="text-xs md:text-sm font-medium text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full mb-5 border border-indigo-500/20">
                 Ing. Sistemas & DevOps / Auditor TI
             </p>
 
-            <div class="w-full border-t border-zinc-800 my-2"></div>
+            <div class="w-full border-t border-zinc-800 my-1"></div>
 
             <!-- Contact Details -->
-            <div class="w-full space-y-4 text-left my-6 text-sm">
+            <div class="w-full space-y-4 text-left my-5 text-sm">
                 <div class="flex items-center gap-3 text-zinc-400">
                     <div class="w-9 h-9 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-indigo-400 shrink-0">
                         <i class="fa-solid fa-graduation-cap"></i>
@@ -57,42 +57,42 @@
 
                 <div class="flex items-center gap-3 text-zinc-400">
                     <div class="w-9 h-9 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-indigo-400 shrink-0">
-                        <i class="fa-solid envelope"></i>
+                        <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <div>
+                    <div class="min-w-0">
                         <p class="text-xs text-zinc-500 uppercase tracking-wider">Contacto</p>
-                        <p class="text-zinc-200 font-medium truncate max-w-[180px]">contacto@maxi300.dev</p>
+                        <p class="text-zinc-200 font-medium truncate">contacto@maxi300.dev</p>
                     </div>
                 </div>
             </div>
 
             <!-- Social Links -->
-            <div class="flex items-center gap-3 w-full justify-center pt-2">
-                <a href="https://github.com/maxi300" target="_blank" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-300 hover:text-white transition">
+            <div class="flex items-center gap-3 w-full justify-center pt-1">
+                <a href="https://github.com/maxi300" target="_blank" aria-label="GitHub" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-300 hover:text-white transition">
                     <i class="fa-brands fa-github text-lg"></i>
                 </a>
-                <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-300 hover:text-white transition">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-300 hover:text-white transition">
                     <i class="fa-brands fa-linkedin-in text-lg"></i>
                 </a>
-                <a href="mailto:contacto@maxi300.dev" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-300 hover:text-white transition">
+                <a href="mailto:contacto@maxi300.dev" aria-label="Email" class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 flex items-center justify-center text-zinc-300 hover:text-white transition">
                     <i class="fa-solid fa-paper-plane text-lg"></i>
                 </a>
             </div>
         </aside>
 
         <!-- Main Content (Right Column - 8 cols) -->
-        <main class="lg:col-span-8 space-y-8">
+        <main class="lg:col-span-8 space-y-6 md:space-y-8">
             
             <!-- Navbar Header -->
-            <header class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 flex flex-col sm:flex-row justify-between items-center gap-4 shadow-xl">
+            <header class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-5 md:p-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 shadow-xl">
                 <div>
-                    <h2 class="text-xl font-bold text-white">Portafolio Profesional</h2>
-                    <p class="text-sm text-zinc-400">Desarrollo de software, auditoría de sistemas e infraestructura.</p>
+                    <h2 class="text-lg md:text-xl font-bold text-white">Portafolio Profesional</h2>
+                    <p class="text-xs md:text-sm text-zinc-400">Desarrollo de software, auditoría de sistemas e infraestructura.</p>
                 </div>
-                <nav class="flex items-center gap-2 bg-zinc-900/80 p-1.5 rounded-xl border border-zinc-800 text-sm font-medium">
-                    <a href="#proyectos" class="px-4 py-2 rounded-lg bg-indigo-600 text-white shadow-md">Software & Cloud</a>
-                    <a href="#institucional" class="px-4 py-2 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition">Institucional & Auditoría</a>
-                    <a href="#soporte" class="px-4 py-2 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition">Soporte & Hardware</a>
+                <nav class="flex flex-wrap items-center gap-1.5 bg-zinc-900/80 p-1.5 rounded-xl border border-zinc-800 text-xs md:text-sm font-medium w-full sm:w-auto justify-center">
+                    <a href="#proyectos" class="px-3 py-1.5 rounded-lg bg-indigo-600 text-white shadow-md">Software & Cloud</a>
+                    <a href="#institucional" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition">Auditoría</a>
+                    <a href="#soporte" class="px-3 py-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/50 transition">Soporte TI</a>
                 </nav>
             </header>
 
@@ -107,9 +107,9 @@
             </section>
 
             <!-- Projects Grid: Software & Cloud (GitHub Repos) -->
-            <section id="proyectos" class="space-y-4">
-                <div class="flex items-center justify-between px-2">
-                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <section id="proyectos" class="space-y-4 scroll-mt-6">
+                <div class="flex items-center justify-between px-1">
+                    <h3 class="text-base md:text-lg font-bold text-white flex items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Proyectos & Repositorios Oficiales
                     </h3>
                     <span class="text-xs text-zinc-500">6 Repositorios Clave</span>
@@ -263,17 +263,17 @@
             </section>
 
             <!-- Institutional & Auditing Section -->
-            <section id="institucional" class="space-y-4">
-                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <section id="institucional" class="space-y-4 scroll-mt-6">
+                <h3 class="text-base md:text-lg font-bold text-white flex items-center gap-2 px-1">
                     <span class="w-2 h-2 rounded-full bg-purple-500"></span> Práctica Profesional & Auditoría TI
                 </h3>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Project MINED / AR -->
                     <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 shadow-lg space-y-3">
-                        <div class="flex justify-between items-start">
+                        <div class="flex justify-between items-start gap-2">
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">Proyecto Confidencial / Sector Público</span>
-                            <i class="fa-solid fa-cube text-indigo-400 text-lg"></i>
+                            <i class="fa-solid fa-cube text-indigo-400 text-lg shrink-0"></i>
                         </div>
                         <h4 class="text-base font-bold text-white">Plataforma Educativa con Realidad Aumentada (MINED)</h4>
                         <p class="text-xs text-zinc-400 leading-relaxed">
@@ -288,9 +288,9 @@
 
                     <!-- IT Auditing Agroferretería -->
                     <div class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 shadow-lg space-y-3">
-                        <div class="flex justify-between items-start">
+                        <div class="flex justify-between items-start gap-2">
                             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Auditoría & Gobierno TI</span>
-                            <i class="fa-solid fa-shield-halved text-indigo-400 text-lg"></i>
+                            <i class="fa-solid fa-shield-halved text-indigo-400 text-lg shrink-0"></i>
                         </div>
                         <h4 class="text-base font-bold text-white">Auditoría de Sistemas (Caso PyME / COBIT 2019)</h4>
                         <p class="text-xs text-zinc-400 leading-relaxed">
@@ -306,8 +306,8 @@
             </section>
 
             <!-- Support, Hardware & Infrastructure Section -->
-            <section id="soporte" class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-xl space-y-6">
-                <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <section id="soporte" class="bg-[#121215] border border-zinc-800/80 rounded-2xl p-6 md:p-8 shadow-xl space-y-6 scroll-mt-6">
+                <h3 class="text-base md:text-lg font-bold text-white flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full bg-amber-500"></span> Infraestructura, Soporte de Campo & Electrónica
                 </h3>
 
@@ -317,8 +317,8 @@
                         <p class="text-zinc-300 text-xs leading-relaxed">Diagnóstico avanzado y resolución de fallas críticas en estaciones de trabajo, corrección de errores de sistema (BSOD / Pantallas azules) y recuperación de datos.</p>
                     </div>
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl">
-                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Mantenimiento de Redes & Comercios</p>
-                        <p class="text-zinc-300 text-xs leading-relaxed">Soporte preventivo y correctivo en infraestructura tecnológica para tiendas y ferreterías, gestión de redes locales, segmentación Wi-Fi y cableado estructurado.</p>
+                        <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Mantenimiento de Redes, Impresoras & Comercios</p>
+                        <p class="text-zinc-300 text-xs leading-relaxed">Soporte preventivo y correctivo en infraestructura tecnológica e impresoras para tiendas y ferreterías, gestión de redes locales, segmentación Wi-Fi y cableado estructurado.</p>
                     </div>
                     <div class="bg-zinc-900/50 border border-zinc-800/80 p-4 rounded-xl sm:col-span-2">
                         <p class="text-xs text-amber-400 font-semibold uppercase tracking-wider mb-2">Electrónica Aplicada & Dispositivos Móviles</p>
